@@ -3,6 +3,12 @@ public class Mobile {
     private String color;
     private String brand;
 
+    public Mobile(String name, String color, String brand){
+        this.name = name;
+        this.color = color;
+        this.brand = brand;
+    }
+
     public String getName() {
         return name;
     }
@@ -28,7 +34,7 @@ public class Mobile {
     }
 
     public void getMobileSpecs(){
-        System.out.println("name: [name], color: [color], brand: [brand]");
+        System.out.println("name: " + name + ", color: " + color + ", brand: " + brand);
     }
 
     public void call(String message){

@@ -1,5 +1,9 @@
 public class Android extends Mobile{
 
+    public Android(String name, String color, String brand) {
+        super(name, color, brand);
+    }
+
     @Override
     public void call(String message){
         System.out.print("<Android>");
@@ -8,6 +12,6 @@ public class Android extends Mobile{
 
     @Override
     public void getMobileSpecs(){
-        System.out.println("name: " + getName() + ", color: " + getColor() + ", brand: " + getBrand());
+        super.getMobileSpecs();
     }
 }

@@ -27,6 +27,10 @@ public class Mobile {
         this.brand = brand;
     }
 
+    public void getMobileSpecs(){
+        System.out.println("name: [name], color: [color], brand: [brand]");
+    }
+
     public void call(String message){
         System.out.println("Message: " + message);
     }

@@ -5,4 +5,9 @@ public class Android extends Mobile{
         System.out.print("<Android>");
         super.call(message);
     }
+
+    @Override
+    public void getMobileSpecs(){
+        System.out.println("name: " + getName() + ", color: " + getColor() + ", brand: " + getBrand());
+    }
 }

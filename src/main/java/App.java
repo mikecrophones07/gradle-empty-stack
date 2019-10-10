@@ -9,6 +9,31 @@ public class App {
     }
 
     public static void main(String[] args) {
+        Iphone iphone = new Iphone();
+        iphone.setBrand("Iphone");
+        iphone.setName("11 Xr");
+        iphone.setColor("Blue");
+
+        Android android = new Android();
+        android.setBrand("Android");
+        android.setName("Oneplus 7 pro");
+        android.setColor("Midnight black");
+
+        iphone.getMobileSpecs();
+        android.getMobileSpecs();
+
+        Person person = new Person();
+        person.setMobile(iphone);
+        person.setMessage("slksjlsjdlasjdklajd");
+
+        person.setMobile(android);
+        person.setMessage("slksjl");
+
+        IphoneRobot iphoneRobot = new IphoneRobot();
+//        iphoneRobot.setMobile(android); <-- Error since iphone robot can only use Iphone
+        iphoneRobot.setMobile(iphone);
+
+
 
     }
 }

@@ -2,7 +2,7 @@ public class Iphone extends Mobile {
 
     @Override
     public void call(String message){
-        System.out.println("<Iphone>");
+        System.out.print("<Iphone>");
         super.call(message);
     }
 }
